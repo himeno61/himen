@@ -5,6 +5,8 @@
 import Link from "next/link";
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
+import { JSX, SVGProps } from "react";
 
 export default function Home() {
   return (
@@ -60,7 +62,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <img
+                <Image
                   alt="Placeholder for my photo"
                   className="rounded-full"
                   height="200"
@@ -83,7 +85,7 @@ export default function Home() {
                   My Experience
                 </h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Here are some of the experiences I've had in my career.
+                  Here are some of the experiences I&apos;ve had in my career.
                 </p>
               </div>
               <div className="space-y-4">
@@ -209,7 +211,7 @@ export default function Home() {
   );
 }
 
-function GithubIcon(props) {
+function GithubIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -229,7 +231,9 @@ function GithubIcon(props) {
   );
 }
 
-function LinkedinIcon(props) {
+function LinkedinIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
@@ -250,7 +254,7 @@ function LinkedinIcon(props) {
   );
 }
 
-function MailboxIcon(props) {
+function MailboxIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -272,7 +276,7 @@ function MailboxIcon(props) {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -293,7 +297,7 @@ function MenuIcon(props) {
   );
 }
 
-function UserIcon(props) {
+function UserIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
