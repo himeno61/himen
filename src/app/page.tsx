@@ -6,7 +6,7 @@ import Link from "next/link";
 import { CardHeader, CardContent, Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
-export function Home() {
+export default function Home() {
   return (
     <div key="1" className="flex flex-col min-h-screen">
       <header className="px-4 sm:px-6 h-14 flex items-center">
