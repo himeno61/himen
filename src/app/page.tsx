@@ -10,7 +10,10 @@ import { JSX, SVGProps } from "react";
 
 export default function Home() {
   return (
-    <div key="1" className="flex flex-col min-h-screen">
+    <div
+      key="1"
+      className="flex flex-col min-h-screen items-center justify-center"
+    >
       <header className="px-4 sm:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <UserIcon className="h-6 w-6" />
@@ -19,25 +22,25 @@ export default function Home() {
         <nav className="ml-auto flex gap-4 sm:gap-6 hidden sm:flex">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="#about"
           >
             About
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="#experience"
           >
             Experience
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="#blog"
           >
             Blog
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4"
-            href="#"
+            href="#contact"
           >
             Contact
           </Link>
@@ -77,7 +80,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <section
+          className="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
+          id="experience"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
@@ -127,7 +133,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-12 md:py-24 lg:py-32" id="blog">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div className="space-y-3">
               <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
@@ -174,7 +180,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+        <section
+          className="w-full py-12 md:py-24 lg:py-32 border-t"
+          id="contact"
+        >
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="text-4xl font-bold tracking-tighter md:text-5xl/tight">
